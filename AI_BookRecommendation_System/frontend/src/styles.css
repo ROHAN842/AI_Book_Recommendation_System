@@ -1,0 +1,174 @@
+/* Apply modern font */
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+
+
+/* Centering the heading properly */
+h1 {
+  display: block;  /* Ensures text stacks properly */
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+
+/* Subheadings */
+h2, h3 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Normal text */
+p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Spacing for paragraphs inside white card */
+.card-content {
+  padding: 20px 30px;
+}
+
+/* Add a soft shadow to the text for better visibility */
+h1, h2, h3, p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Quotes section */
+.quotes {
+  font-style: italic;
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+}
+
+/* Improve card appearance */
+.white-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.scrollElement {
+  position: absolute;
+  height: 6000px;
+  width: 100px;
+  top: 0;
+  z-index: 0;
+}
+
+.btn {
+  position: fixed;
+  bottom: 5%;
+  right: 0px;
+  transform: translateX(-50%);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.7em;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 11;
+}
+
+.btn_works {
+  left: 100px;
+  right: unset;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #1b1734;
+}
+
+/* Margin tool using for all the books from here */
+
+
+/* Particle js css animation start from here */
+
+/* Particles Background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1; /* Ensures it stays behind the content */
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(to bottom, #FF9A8B, #FF6A88, #FFCC70); */
+  /* background: linear-gradient(to bottom, #000015, #0a0a2a, #1b0045, #320064, #4c0080); */
+  background: linear-gradient(to bottom, #000010, #020031, #040052, #0c0075, #1a008a);
+
+}
+
+/* Ensure the main content is visible over the animation */
+.recommendation-container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust search box to be visible */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 10px;
+  background-color: #ff6699;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-box button:hover {
+  background-color: #ff3366;
+}
+
